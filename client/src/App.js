@@ -1,4 +1,4 @@
-import { CssBaseline,ThemeProvider } from "@mui/material";
+import { CssBaseline,ThemeProvider, useMediaQuery } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
