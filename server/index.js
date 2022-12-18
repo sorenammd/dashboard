@@ -23,7 +23,12 @@ app.use(helmet.crossOriginResourcePolicy({policy:'cross-origin'}));
 app.use(morgan('common'));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(cors());
-
+app.use((req,res,next)=>{
+    res.setHeader('Access-Control-Allow-Origin','*');
+    res.setHeader('Access-Control-Allow-Methods','GET,POST,PUT,PATCH,DELETE');
+    res.setHeader('Access-Control-Allow-Methods','Content-Type','Authorization');
+    next(); 
+})
 /* Routes */
 app.use('/client',clientRoutes);
 app.use('/general',generalRoutes);
