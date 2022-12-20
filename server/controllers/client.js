@@ -2,7 +2,7 @@ import Product from "../models/Product.js";
 import ProductStat from "../models/ProductStat.js";
 import User from "../models/User.js";
 import Transaction from "../models/Transaction.js";
-import getCountryIso03 from "country-iso-2-to-3";
+import getCountryIso3 from "country-iso-2-to-3";
 export const getProducts = async(req,res) =>{
     try {
         const products = await Product.find();
@@ -71,7 +71,7 @@ export const getGeography = async(req,res) =>{
   try {   
       const users = await User.find();
       const mappedLocations=users.reduce((acc, {country})=>{
-        countryIS03 = getCountryIso03(country);
+        const countryIS03 = getCountryIso3(country);
         if(!acc[countryIS03]){
           acc[countryIS03]=0;
         }
