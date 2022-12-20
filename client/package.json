@@ -8,6 +8,8 @@
     "@mui/icons-material": "^5.10.16",
     "@mui/material": "^5.10.17",
     "@mui/x-data-grid": "^5.17.14",
+    "@nivo/core": "^0.80.0",
+    "@nivo/geo": "^0.80.0",
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
