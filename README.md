@@ -1,5 +1,5 @@
 # Admin Dashboard
-  This is a MERN Admin
+  This is a MERN admin dashboard
 
 
 
