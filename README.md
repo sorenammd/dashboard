@@ -4,7 +4,7 @@
 
 
 
-![](https://media.giphy.com/media/S1sZNvjX5dKtghdf8m/giphy.gif)
+![image](https://user-images.githubusercontent.com/107199800/209166023-81d8a495-25e4-423c-b4f4-609fc6637eb5.png)
 
 
 ## Project capabilities:
