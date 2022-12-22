@@ -1,6 +1,6 @@
 # Admin Dashboard
 
-This is a management dashboard for e-commerce platforms
+This is a management dashboard for e-commerce platform built with Mern Stack technologies
 
 
 ![image](https://user-images.githubusercontent.com/107199800/209166023-81d8a495-25e4-423c-b4f4-609fc6637eb5.png)
