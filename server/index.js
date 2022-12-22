@@ -18,7 +18,7 @@ import {dataUser,dataProduct
     ,dataOverallStat,dataAffiliateStat} from './data/index.js'
 import Transaction from "./models/Transaction.js";
 import OverallStat from "./models/OverallStat.js"; 
-import AffilateStat from "./models/AffilateStat.js"
+import Affiliatestats from "./models/Affiliatestats.js"
 dotenv.config();
 const app = express();
 app.use(express.json());
@@ -51,5 +51,5 @@ mongoose.connect(process.env.MONGO_URL,{
     app.listen(PORT,()=>console.log(`Server Port:${PORT}`));
     // User.insertMany(dataUser);
     // Product.insertMany(dataProduct);
-   // AffilateStat.insertMany(dataAffiliateStat);
+  //Affiliatestats.insertMany(dataAffiliateStat);
 }).catch((error)=> console.log(`${error}`))

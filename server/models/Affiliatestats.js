@@ -10,5 +10,5 @@ const AffilateStatSchema = new mongoose.Schema(
     },
   { timestamps: true });
 
-const AffilateStat = mongoose.model("AffilateStat", AffilateStatSchema);
-export default AffilateStat;
+const Affiliatestats = mongoose.model("affiliatestats", AffilateStatSchema);
+export default Affiliatestats;
