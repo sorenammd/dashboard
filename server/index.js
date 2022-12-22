@@ -13,9 +13,12 @@ import salesRoutes from './routes/sales.js'
 import User from "./models/User.js";
 import Product from "./models/Product.js";
 import ProductStat from "./models/ProductStat.js";
-import {dataUser,dataProduct,dataProductStat,dataTransaction,dataOverallStat} from './data/index.js'
+import {dataUser,dataProduct
+    ,dataProductStat,dataTransaction
+    ,dataOverallStat,dataAffiliateStat} from './data/index.js'
 import Transaction from "./models/Transaction.js";
 import OverallStat from "./models/OverallStat.js"; 
+import AffilateStat from "./models/AffilateStat.js"
 dotenv.config();
 const app = express();
 app.use(express.json());
@@ -48,5 +51,5 @@ mongoose.connect(process.env.MONGO_URL,{
     app.listen(PORT,()=>console.log(`Server Port:${PORT}`));
     // User.insertMany(dataUser);
     // Product.insertMany(dataProduct);
-    // OverallStat.insertMany(dataOverallStat);
+   // AffilateStat.insertMany(dataAffiliateStat);
 }).catch((error)=> console.log(`${error}`))

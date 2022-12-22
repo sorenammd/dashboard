@@ -15,6 +15,7 @@ import Daily from "scenes/Daily";
 import Monthly from "scenes/Monthly";
 import Breakdown from "scenes/Breakdown";
 import Admins from "scenes/Admins"
+import Performance from "scenes/Performance"
 function App() {
   const mode = useSelector((state)=>state.global.mode);
   const theme = useMemo(()=> createTheme(themeSettings(mode)),[mode]);
@@ -37,6 +38,8 @@ function App() {
             <Route path="/monthly" element={<Monthly/>}/>
             <Route path="/breackdown" element={<Breakdown/>}/>
             <Route path="/admin" element={<Admins/>}/>
+            <Route path="/performance" element={<Performance/>}/>
+            
           </Route>
         </Routes>
       </ThemeProvider>
