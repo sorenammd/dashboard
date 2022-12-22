@@ -15,7 +15,7 @@ Customized dashboard, list of products, list of customers, list of admins, list 
     
 ## 🚀 Technologies:
   Frontend:
-    Javascript, HTML, Material UI ,React , Redux, Redux-Toolkit, react-router-dom, nivo
+    Javascript, HTML, Material UI ,React , Redux, Redux-Toolkit, react-router-dom, nivo , Dark/Light Mode
     
   Backend:
     Node js, Express, Cors, body-parser
